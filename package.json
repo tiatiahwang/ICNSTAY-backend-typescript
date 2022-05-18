@@ -1,0 +1,40 @@
+{
+  "name": "typescript-icnstay-backend",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server --est ts,js",
+    "migrate": "npx prisma migrate dev --preview-feature",
+    "studio": "npx prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiatiahwang/ICNSTAY-backend-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiatiahwang/ICNSTAY-backend-typescript/issues"
+  },
+  "homepage": "https://github.com/tiatiahwang/ICNSTAY-backend-typescript#readme",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.5.3",
+    "@graphql-tools/merge": "^8.2.11",
+    "@graphql-tools/schema": "^8.3.11",
+    "apollo-server": "^2.25.2",
+    "apollo-server-express": "2.19",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "^15.8.0",
+    "morgan": "^1.10.0",
+    "prisma": "^3.14.0"
+  },
+  "devDependencies": {
+    "@prisma/client": "^3.14.0",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  }
+}
